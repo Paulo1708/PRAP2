@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('personages.css');
+
+
+* {
+    font-family:'Kufam', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: black;
+    color: aliceblue;
+}
+
+section{
+  padding: 28px 8%;
+}
+
+.btn-default {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(42, 73, 173);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color .3s ease;
+  color: aliceblue;
+}
+
+.btn-default:hover{
+  background-color: rgb(55, 94, 224);
+}
+
+.social-media-buttons{
+  display: flex;
+  gap: 18px
+}
+.social-media-buttons a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color:antiquewhite;
+  background-color: rgb(26, 19, 19);
+  box-shadow: 0px 0px 12px 4px rgb(43, 50, 73);
+  border-radius: 10px;
+  transition: box-shadow .3s ease;
+}
+.social-media-buttons a:hover{
+  box-shadow: 0px 0px 12px 8px rgb(43, 50, 73);
+}
+
+.section-title {
+  color: antiquewhite;
+  font-size: 1.563rem;
+}
+
+.section-subtitle {
+  font-size: 2.1875rem;
+} 
+
+/*responsividade para mobile - botoes e menu */
+#mobile_btn{
+  display: none;
+}
+
+#mobile_menu{
+  display: none;
+}
+
+@media screen and (max-width:1170px){
+  #nav_list,
+  #navbar .btn-default{
+    display: none;
+  }
+  #mobile_btn{
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 2.5 rem;
+    cursor: pointer;
+  }
+  #mobile_menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #mobile_nav_list{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0px;
+  }
+
+  #mobile_nav_list .nav-item{
+    list-style: none;
+    text-align: center;
+  }
+  /*responsividade para mobile - botoes e menu */
+
+  
+}
+
